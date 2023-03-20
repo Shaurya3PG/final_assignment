@@ -48,34 +48,6 @@ export class ProdTableComponent implements OnInit{
       "username": "Leopoldo_Corkery",
       "website": "ola.org",
       "isEdit": false
-    },
-    {
-      "id": 7,
-      "name": "Kurtis Weissnat",
-      "username": "Elwyn.Skiles",
-      "website": "elvis.io",
-      "isEdit": false
-    },
-    {
-      "id": 8,
-      "name": "Nicholas Runolfsdottir V",
-      "username": "Maxime_Nienow",
-      "website": "jacynthe.com",
-      "isEdit": false
-    },
-    {
-      "id": 9,
-      "name": "Glenna Reichert",
-      "username": "Delphine",
-      "website": "conrad.com",
-      "isEdit": false
-    },
-    {
-      "id": 10,
-      "name": "Clementina DuBuque",
-      "username": "Moriah.Stanton",
-      "website": "ambrose.net",
-      "isEdit": false
     }
   ]
   constructor() { }
