@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myshop-a342c": {
+      "hosting": {
+        "shop": [
+          "myshop-a342c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myshop-a342c"
+  }
+}

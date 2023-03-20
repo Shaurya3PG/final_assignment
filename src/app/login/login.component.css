@@ -1,0 +1,14 @@
+form{
+    float:inline-end;
+    align-self: auto;
+    margin: 2px black;
+}
+.displayTable{
+    width: 300px;
+    border: 6px solid pink;
+    padding: 50px;
+    margin: 20px;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
