@@ -9,44 +9,44 @@ export class ProdTableComponent implements OnInit{
   usersArray = [
     {
       "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "website": "hildegard.org",
+      "name": "Chocolate",
+      "username": "Sweet",
+      "website": "10",
       "isEdit": false
     },
     {
       "id": 2,
-      "name": "Ervin Howell",
-      "username": "Antonette",
-      "website": "anastasia.net", 
+      "name": "Milk",
+      "username": "Dairy",
+      "website": "14", 
       "isEdit": false
     },
     {
       "id": 3,
-      "name": "Clementine Bauch",
-      "username": "Samantha",
-      "website": "ramiro.info",
+      "name": "Cookies",
+      "username": "biscuit",
+      "website": "30",
       "isEdit": false
     },
     {
       "id": 4,
-      "name": "Patricia Lebsack",
-      "username": "Karianne",
-      "website": "kale.biz",
+      "name": "Cheese",
+      "username": "dairy",
+      "website": "30",
       "isEdit": false
     },
     {
       "id": 5,
-      "name": "Chelsey Dietrich",
-      "username": "Kamren",
-      "website": "demarco.info",
+      "name": "Bread",
+      "username": "dairy",
+      "website": "30",
       "isEdit": false
     },
     {
       "id": 6,
-      "name": "Mrs. Dennis Schulist",
-      "username": "Leopoldo_Corkery",
-      "website": "ola.org",
+      "name": "Pizza",
+      "username": "junk",
+      "website": "20",
       "isEdit": false
     }
   ]
