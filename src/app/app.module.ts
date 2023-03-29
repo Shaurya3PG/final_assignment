@@ -26,6 +26,8 @@ import { EditDataComponent } from './admin/edit-data/edit-data.component';
 import { CartButtonComponent } from './cart-button/cart-button.component';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {AngularFireStorageModule} from '@angular/fire/compat/storage';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +67,8 @@ import {AngularFireStorageModule} from '@angular/fire/compat/storage';
     ]),
     NgbModule,
     BrowserAnimationsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
   ],
   providers: [AuthService, AngularFirestore,{provide:FIREBASE_OPTIONS, useValue: environment}],
   bootstrap: [AppComponent]
