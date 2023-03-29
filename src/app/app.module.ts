@@ -6,6 +6,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { ShopNavbarComponent } from './shop-navbar/shop-navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './auth.services';
 import { EditDataComponent } from './admin/edit-data/edit-data.component';
 import { CartButtonComponent } from './cart-button/cart-button.component';
-
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,7 @@ import { CartButtonComponent } from './cart-button/cart-button.component';
     ProdTableComponent,
     EditDataComponent,
     CartButtonComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,9 @@ import { CartButtonComponent } from './cart-button/cart-button.component';
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
+    AngularFirestoreModule,
     NgbModule,
+    AngularFireStorageModule,
     FormsModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
@@ -61,7 +66,7 @@ import { CartButtonComponent } from './cart-button/cart-button.component';
     NgbModule,
     BrowserAnimationsModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, AngularFirestore,{provide:FIREBASE_OPTIONS, useValue: environment}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

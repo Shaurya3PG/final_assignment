@@ -1,4 +1,5 @@
 export const environment = {
+  production: false,
   firebase: {
     projectId: 'myshop-a342c',
     appId: '1:927396011554:web:4bf20b400be242267ab47b',
@@ -9,4 +10,5 @@ export const environment = {
     authDomain: 'myshop-a342c.firebaseapp.com',
     messagingSenderId: '927396011554',
     measurementId: 'G-3XHF29TYLX',
-  },};
+  }
+};

@@ -9,7 +9,6 @@
                 <div class="formGroup">
                     <input type="password" class="formControl" placeholder="Password" #userPassword required>
                 </div>
-                <!-- Calling SignIn Api from AuthService -->
                 <div class="formGroup">
                     <input type="button" class="btn btnPrimary" value="Log in"
                         (click)="authService.SignIn(userName.value, userPassword.value)">
@@ -17,7 +16,6 @@
                 <div class="formGroup">
                     <span class="or"><span class="orInner">Or</span></span>
                 </div>
-                <!-- Calling GoogleAuth Api from AuthService -->
                 <div class="formGroup">
                     <button type="button" class="btn btn-primary" (click)="authService.GoogleAuth()">
                         <i class="fab fa-google-plus-g"></i>
@@ -34,5 +32,3 @@
         </div>
     </div>
 </form>
-
-<!-- <button (click)="login()" class=" btn btn-primary"> Login with Google </button> -->
