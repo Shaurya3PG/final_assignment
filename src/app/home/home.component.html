@@ -1,1 +1,22 @@
-<h1>it works</h1>
+<div id="login-box">
+    <div class="right">
+        <form #RegisterForm="ngForm" (ngSubmit)="registerItem(RegisterForm.value)">
+            <h1>Add new item</h1>
+            <div class="form-group">
+                <input type="text" ngModel id="name" name="username" placeholder="Name" />
+            </div>
+            <div class="form-group">
+                <input type="text" ngModel id="description" name="description" placeholder="Description" />
+            </div>
+            <div class="form-group">
+                <input type="text" ngModel id="quantity" name="quantity" placeholder="Quantity" />
+            </div>
+            <div class="form-group">
+                <input type="text" ngModel id="tag" name="tag" placeholder="Tag" />
+            </div>
+            <div class="form-group">
+                <input type="submit" id="saveData" name="signup_submit" value="registerItem" />
+            </div>
+        </form>
+
+    </div>
